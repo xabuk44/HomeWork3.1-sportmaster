@@ -15,3 +15,12 @@ def s_m_bonus(full_purchase, last_purchase):
     if full_purchase > silver_purchase_max:
         bonus = (int(last_purchase/coefficient) * golden_percent) * coefficient
     return bonus
+
+"""
+s_m_bonus(10_000, 4_700)
+200.0
+s_m_bonus(80_000, 1_200)
+70.0
+s_m_bonus(160_000, 4_600)
+400.0
+"""
